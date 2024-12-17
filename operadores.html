@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS64C</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AS64C - Fundamentos de programação</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="variaveis.html">Variáveis</a>
+        <a href="operadores.html">Operadores</a>
+        <a href="estruturas.html">Estruturas de Controle</a>
+        <a href="logica.html">Lógica de Programação</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <main>
+        <div class="txtprin">
+            <h2>O que são Operadores em C?</h2>
+            <p>Os <a href="operadores.html" class="link-c">operadores</a> em C são símbolos especiais usados para
+                realizar operações em variáveis e valores. Eles são fundamentais para manipular dados e controlar o
+                fluxo de um programa. Desde cálculos aritméticos simples até comparações e manipulações de bits, os
+                operadores desempenham um papel essencial na <a href="logica.html" class="link-c">lógica de
+                    programação</a>.</p>
+        </div>
+        <div class="operadores-c">
+            <h3>Tipos de Operadores em C</h3>
+
+            <h4>1. Operadores Aritméticos</h4>
+            <p>Os operadores aritméticos são usados para realizar operações matemáticas básicas:</p>
+            <ul>
+                <li><strong>+</strong>: Adição</li>
+                <li><strong>-</strong>: Subtração</li>
+                <li><strong>*</strong>: Multiplicação</li>
+                <li><strong>/</strong>: Divisão</li>
+                <li><strong>%</strong>: Módulo (resto da divisão inteira)</li>
+            </ul>
+
+            <h4>2. Operadores Relacionais</h4>
+            <p>Os operadores relacionais são usados para comparar valores. Eles retornam verdadeiro ou falso:</p>
+            <ul>
+                <li><strong>==</strong>: Igual a</li>
+                <li><strong>!=</strong>: Diferente de</li>
+                <li><strong>&gt;</strong>: Maior que</li>
+                <li><strong>&lt;</strong>: Menor que</li>
+                <li><strong>&gt;=</strong>: Maior ou igual a</li>
+                <li><strong>&lt;=</strong>: Menor ou igual a</li>
+            </ul>
+
+            <h4>3. Operadores Lógicos</h4>
+            <p>Os operadores lógicos são usados para combinar condições:</p>
+            <ul>
+                <li><strong>&&</strong>: E lógico</li>
+                <li><strong>||</strong>: OU lógico</li>
+                <li><strong>!</strong>: NÃO lógico</li>
+            </ul>
+
+            <h4>4. Operadores de Atribuição</h4>
+            <p>Os operadores de atribuição são usados para atribuir valores às <a href="variaveis.html"
+                    class="link-c">variáveis</a>:</p>
+            <ul>
+                <li><strong>=</strong>: Atribuição simples</li>
+                <li><strong>+=</strong>: Adição e atribuição</li>
+                <li><strong>-=</strong>: Subtração e atribuição</li>
+                <li><strong>*=</strong>: Multiplicação e atribuição</li>
+                <li><strong>/=</strong>: Divisão e atribuição</li>
+                <li><strong>%=</strong>: Módulo e atribuição</li>
+            </ul>
+
+            <h4>5. Operadores Bit a Bit</h4>
+            <p>Esses operadores realizam operações diretamente no nível dos bits:</p>
+            <ul>
+                <li><strong>&</strong>: E bit a bit</li>
+                <li><strong>|</strong>: OU bit a bit</li>
+                <li><strong>^</strong>: OU exclusivo bit a bit</li>
+                <li><strong>~</strong>: Complemento bit a bit</li>
+                <li><strong>&lt;&lt;</strong>: Deslocamento à esquerda</li>
+                <li><strong>&gt;&gt;</strong>: Deslocamento à direita</li>
+            </ul>
+        </div>
+        <div class="operadores-c">
+            <h3>Importância dos Operadores</h3>
+            <p>Os operadores são uma parte essencial da <a href="logica.html" class="link-c">lógica de programação</a>.
+                Eles permitem que os programas realizem cálculos, tomem decisões com base em comparações e manipulem
+                dados diretamente. Em conjunto com as <a href="estruturas.html" class="link-c">estruturas de
+                    controle</a>, eles formam a base para resolver problemas computacionais.</p>
+        </div>
+        <div class="operadores-c">
+            <h3>Exemplo Prático</h3>
+            <pre><code>
+        #include <stdio.h>
+        
+        int main() {
+            int a = 10, b = 5;
+            int soma = a + b;  // Operador aritmético
+            int maior = a > b; // Operador relacional
+            int resultado = (a > 0) && (b > 0); // Operador lógico
+        
+            printf("Soma: %d\n", soma);
+            printf("A é maior que B? %d\n", maior);
+            printf("Ambos são positivos? %d\n", resultado);
+        
+            return 0;
+        }
+            </code></pre>
+            <p>Este exemplo demonstra o uso de diferentes operadores em C para realizar cálculos, comparar valores e
+                combinar condições.</p>
+        </div>
+
+        <button id="back-to-top">&#8593;</button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido na disciplina AS64C: Certificadora De Competência Comum</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

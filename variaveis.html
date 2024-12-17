@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS64C</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AS64C - Fundamentos de programação</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="variaveis.html">Variáveis</a>
+        <a href="operadores.html">Operadores</a>
+        <a href="estruturas.html">Estruturas de Controle</a>
+        <a href="logica.html">Lógica de Programação</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <main>
+        <div class="txtprin">
+            <h2>O que são as Variáveis em C?</h2>
+            <p>As <a href="variaveis.html" class="link-c">variáveis</a> são elementos fundamentais em qualquer linguagem
+                de programação, e em C não é diferente. Elas servem para armazenar valores que podem ser manipulados ao
+                longo do programa. Cada variável tem um nome, um tipo e um valor, que podem mudar durante a execução do
+                programa.</p>
+        </div>
+        <div class="variaveis-c">
+
+            <h3>Como as Variáveis são Utilizadas?</h3>
+            <p>Em C, as variáveis são declaradas antes de serem utilizadas, especificando o tipo de dado que a variável
+                vai armazenar, como <em>int</em> para números inteiros, <em>float</em> para números de ponto flutuante e
+                <em>char</em> para caracteres. Elas são usadas para armazenar resultados de cálculos, entradas do
+                usuário e dados temporários para manipulação durante o programa.
+            </p>
+
+            <h3>Como Funcionam as Variáveis?</h3>
+            <p>Quando você declara uma variável em C, o compilador aloca espaço de memória para armazenar seu valor. O
+                valor de uma variável pode ser alterado ao longo do tempo, e o valor pode ser acessado ou modificado
+                utilizando o nome da variável. A manipulação de variáveis envolve o uso de <a href="operadores.html"
+                    class="link-c">operadores</a>, como os aritméticos e lógicos, que permitem realizar operações sobre
+                o valor armazenado.</p>
+
+            <h3>Importância das Variáveis</h3>
+            <p>As variáveis são importantes porque permitem que os programas armazenem e manipulem dados de maneira
+                eficiente. Sem variáveis, seria impossível criar programas dinâmicos que realizam cálculos ou interagem
+                com o usuário. Elas são essenciais em todas as áreas da programação, incluindo a <a
+                    href="estruturas.html" class="link-c">lógica de programação</a> e as <a href="estruturas.html"
+                    class="link-c">estruturas de controle</a>.</p>
+        </div>
+        <div class="variaveis-c">
+            <h2>Tipos de Variáveis em C</h2>
+            <p>Em C, as variáveis têm diferentes tipos, dependendo do tipo de dado que elas armazenam. Cada tipo de
+                variável ocupa um determinado espaço de memória e possui um conjunto de operações que podem ser
+                realizadas sobre ele. Abaixo estão os principais tipos de variáveis em C:</p>
+
+            <h3>1. Tipos Inteiros</h3>
+            <p>Os tipos inteiros são usados para armazenar números inteiros, ou seja, números sem casas decimais. Eles
+                podem ser <em>signed</em> (com sinal) ou <em>unsigned</em> (sem sinal), dependendo de como o valor é
+                armazenado.</p>
+            <ul>
+                <li><strong>int</strong>: Armazena números inteiros, positivos ou negativos.</li>
+                <li><strong>short</strong>: Armazena números inteiros menores (menor capacidade de armazenamento).</li>
+                <li><strong>long</strong>: Armazena números inteiros maiores (maior capacidade de armazenamento).</li>
+                <li><strong>unsigned int</strong>: Armazena números inteiros não negativos.</li>
+            </ul>
+
+            <h3>2. Tipos de Ponto Flutuante</h3>
+            <p>Os tipos de ponto flutuante são usados para armazenar números com casas decimais.</p>
+            <ul>
+                <li><strong>float</strong>: Armazena números com precisão simples.</li>
+                <li><strong>double</strong>: Armazena números com maior precisão.</li>
+                <li><strong>long double</strong>: Armazena números com precisão ainda maior que o
+                    <strong>double</strong>.
+                </li>
+            </ul>
+
+            <h3>3. Tipos de Caractere</h3>
+            <p>O tipo <strong>char</strong> é usado para armazenar um único caractere. Em C, o <strong>char</strong> é
+                tecnicamente um número inteiro pequeno que representa o código ASCII do caractere.</p>
+            <ul>
+                <li><strong>char</strong>: Armazena um único caractere, como 'a', 'b', '1', etc.</li>
+                <li><strong>unsigned char</strong>: Armazena caracteres, mas não pode ser negativo.</li>
+            </ul>
+
+            <h3>4. Tipos de Dados Compostos</h3>
+            <p>Em C, também é possível criar tipos de dados compostos, que são combinações de outros tipos de dados.</p>
+            <ul>
+                <li><strong>array</strong>: Armazena uma coleção de variáveis do mesmo tipo.</li>
+                <li><strong>struct</strong>: Armazena uma coleção de variáveis de tipos diferentes.</li>
+                <li><strong>union</strong>: Semelhante à <strong>struct</strong>, mas economiza memória, armazenando
+                    diferentes tipos na mesma área de memória.</li>
+            </ul>
+
+            <h3>5. Tipos Modificadores</h3>
+            <p>Os tipos modificadores são usados para alterar o tamanho e o comportamento dos tipos primitivos.</p>
+            <ul>
+                <li><strong>signed</strong>: Especifica que a variável pode armazenar valores negativos.</li>
+                <li><strong>unsigned</strong>: Especifica que a variável só pode armazenar valores positivos.</li>
+                <li><strong>long</strong>: Aumenta o tamanho do tipo de dado.</li>
+                <li><strong>short</strong>: Diminui o tamanho do tipo de dado.</li>
+            </ul>
+        </div>
+        <div class="variaveis-c">
+            <h3>Exemplo de Declaração de Variáveis</h3>
+            <pre><code>
+                #include <stdio.h>
+                
+                int main() {
+                    int idade = 30;           // Tipo inteiro
+                    float altura = 1.75;      // Tipo de ponto flutuante
+                    char inicial = 'J';       // Tipo caractere
+                
+                    printf("Idade: %d\n", idade);
+                    printf("Altura: %.2f\n", altura);
+                    printf("Inicial: %c\n", inicial);
+                
+                    return 0;
+                }
+                    </code></pre>
+            <p>Este exemplo demonstra como declarar e inicializar variáveis de diferentes tipos em C. Cada tipo de
+                variável é usado para armazenar diferentes tipos de dados e, assim, atende a diferentes necessidades de
+                programação.</p>
+        </div>
+
+        <button id="back-to-top">&#8593;</button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido na disciplina AS64C: Certificadora De Competência Comum</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

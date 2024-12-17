@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS64C</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AS64C - Fundamentos de programação</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="variaveis.html">Variáveis</a>
+        <a href="operadores.html">Operadores</a>
+        <a href="estruturas.html">Estruturas de Controle</a>
+        <a href="logica.html">Lógica de Programação</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Página com Vídeo e Quiz</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+
+        <body>
+            <div class="video-c">
+                <h2>Assista ao Vídeo</h2>
+                <p>Assista ao vídeo abaixo para aprender mais sobre lógica de programação:</p>
+                <video controls>
+                    <source src="Videoaula/Video aula.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+
+            <div class="quiz-c">
+                <h2>Teste seus Conhecimentos</h2>
+                <p>Responda as perguntas abaixo para verificar o quanto você aprendeu:</p>
+                
+                <div class="quiz-question">
+                    <h3> Exercicio 1</h3>
+                    <label>Escreva um algoritmo que some todos os números pares de 1 a 100 usando o for.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    
+    int acumulador = 0; // Cria-se e inicializa-se a variável que vai fazer a soma dos números.
+    for (int i = 1; i <= 100; i++) { // i começa com o valor 1 e enquanto i for menor ou igual a 100, i será igual a i + 1.
+        if (i % 2 == 0) { // Se o resto da divisão de i por 2 for igual a 0 (ou seja, se for um número par), então...
+            acumulador += i; // O mesmo que acumulador = acumulador + i.
+        }
+    }
+    printf("A soma dos números pares de 1 a 100 é igual a: %d\n", acumulador); // Exibe o resultado.
+    return 0;
+
+    }
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 2</h3>
+                    <label>Escreva um algoritmo que calcule a potência de 5 elevado a 10 usando o laço while.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+int main() {
+    int i = 1; // Declara-se a variável i e a inicializamos com o valor 1. A variável i será o nosso contador.
+    int num = 5;
+
+    while (i < 10) { // Enquanto o valor de i for menor que 10, então...
+        num *= 5; // O mesmo que num = num * 5.
+        i++; // Adiciona-se +1 à variável i.
+    }
+
+    printf("A potência de 5 elevado a 10 é igual a: %d\n", num); // Exibe o resultado.
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 3</h3>
+                    <label>A sequência de Fibonacci é uma sequência numérica em que cada número é igual a soma dos dois anteriores. Escreva um algoritmo que imprima a sequência de fibonacci até o décimo termo usando o laço for.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    int n1 = 0, n2 = 1, proximo = 1; // Inicializa-se os dois primeiros números da sequência e cria-se a variável acumuladora.
+
+    for (int i = 1; i <= 10; i++) { // Começando o valor de i em 1. Enquanto i for menor ou igual a 10...
+        printf("%d\n", proximo); // Imprime o valor atual de proximo.
+        proximo = n1 + n2; // Atualiza o valor de proximo para a soma dos dois últimos termos.
+        n1 = n2; // O valor de n1 passa a ser o valor de n2.
+        n2 = proximo; // O valor de n2 passa a ser o valor de proximo.
+    }
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 4</h3>
+                    <label>Escreva um algoritimo que some todos os elementos de um array.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    int numeros[] = {1, 5, 8, 3, 10, 4}; // Array contendo alguns números.
+    int tamanho = sizeof(numeros) / sizeof(numeros[0]); // Calcula o tamanho do array.
+    int total = 0; // Inicializa o total.
+
+    for (int i = 0; i < tamanho; i++) { // Enquanto i for menor que o tamanho do array...
+        total += numeros[i]; // O mesmo que total = total + numeros[i].
+    }
+
+    printf("Total: %d\n", total); // Imprime o total.
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 5</h3>
+                    <label>Considerando o fatorial como sendo uma operação matemática que consiste na multiplicação de um número natural por todos os seus antecessores até chegar ao número 1. Escreva um algoritimo que calcule o fatorial de um número.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    int fatorialDe = 5; // Variável do número que será calculado o fatorial.
+    int fatorial = 1; // Variável que armazenará o resultado do fatorial. Inicializada como 1.
+
+    for (int i = 1; i <= fatorialDe; i++) { // Enquanto i for menor ou igual ao valor de fatorialDe...
+        fatorial *= i; // O mesmo que fatorial = fatorial * i.
+    }
+
+    printf("Fatorial: %d\n", fatorial); // Imprime o resultado do fatorial.
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 6</h3>
+                    <label>Escreva um algoritmo que inverta os elementos de um dado array o deixando inverso.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Array original.
+    int tamanho = sizeof(array) / sizeof(array[0]); // Calcula o tamanho do array.
+    int inverso[tamanho]; // Array para armazenar o inverso.
+
+    // Percorre o array do final para o começo.
+    for (int i = 0; i < tamanho; i++) {
+        inverso[i] = array[tamanho - 1 - i]; // Preenche o array inverso.
+    }
+
+    // Imprime o array invertido.
+    printf("Array invertido: ");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%d ", inverso[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 7</h3>
+                    <label>Escreva um algoritmo que encontre o menor número de um Array.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+
+int main() {
+    int array[] = {1, 5, 10, 18, 2, 15, 3}; // O vetor contendo os números.
+    int tamanho = sizeof(array) / sizeof(array[0]); // Calcula o tamanho do array.
+    int menorNumero = array[0]; // Inicialmente, o menor número será o primeiro número do array.
+
+    // Percorre o array para encontrar o menor número.
+    for (int i = 0; i < tamanho; i++) { 
+        if (array[i] < menorNumero) { // Compara cada elemento do array com o menor número até então.
+            menorNumero = array[i]; // Atualiza o menor número caso o número atual seja menor.
+        }
+    }
+
+    // Exibe o menor número.
+    printf("O menor número é: %d\n", menorNumero);
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 8</h3>
+                    <label>Escreva um algoritmo que substitua todas as letras repetidas em uma string.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+                    <pre><code>
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char string[] = "Violetas são azuis!"; // Inicializa a string original.
+    char antigaLetra = 's'; // Define a letra a ser substituída.
+    char novaLetra = 'z'; // Define a nova letra que substituirá a antiga.
+    char novaString[sizeof(string)]; // Inicializa um array para armazenar a nova string.
+
+    // Percorre a string original.
+    for (int i = 0; i < strlen(string); i++) {
+        if (string[i] == antigaLetra) { // Se a letra atual for igual à antiga letra...
+            novaString[i] = novaLetra; // Substitui pela nova letra.
+        } else { // Caso contrário...
+            novaString[i] = string[i]; // Copia a letra original.
+        }
+    }
+
+    novaString[strlen(string)] = '\0'; // Adiciona o caractere nulo ao final da nova string.
+
+    // Imprime os resultados.
+    printf("Antiga string: %s\n", string);
+    printf("Nova string: %s\n", novaString);
+
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+        <h3> Exercicio 9</h3>
+        <label>Crie um algoritmo que conte o número total de vogais em uma string.</label>
+        <div class="answer-button">+ Mostrar Resposta</div>
+        <pre><code>
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char string[] = "Quantas vogais eu tenho?"; // Cria a string contendo uma frase.
+    int numeroDeVogais = 0; // Inicializa a variável que vai contar o número de vogais.
+
+    // Percorre a string inteira.
+    for (int i = 0; i < strlen(string); i++) {
+        // Verifica se a letra atual é uma vogal.
+        if (string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u' ||
+            string[i] == 'A' || string[i] == 'E' || string[i] == 'I' || string[i] == 'O' || string[i] == 'U') {
+            numeroDeVogais++; // Se for uma vogal, incrementa o contador.
+        }
+    }
+
+    // Exibe o número de vogais na string.
+    printf("Número de vogais na string: %d\n", numeroDeVogais);
+
+    return 0;
+}
+                
+                    </code></pre>
+                </div>
+
+                <div class="quiz-question">
+                    <h3> Exercicio 10</h3>
+                    <label>Escreva um algoritmo que conte o número de palavras em uma frase usando laços de repetição.</label>
+                    <div class="answer-button">+ Mostrar Resposta</div>
+        <pre><code>
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char frase[] = "Quantas palavras existem aqui?"; // Cria e inicializa a variável com a frase.
+    int numeroDePalavras = 1; // Inicializa o número de palavras com 1, pois já temos uma palavra inicialmente.
+
+    // Percorre a frase inteira.
+    for (int i = 0; i < strlen(frase); i++) {
+        if (frase[i] == ' ') { // Se o caractere na posição i for um espaço...
+            numeroDePalavras++; // Incrementa o número de palavras.
+        }
+    }
+
+    // Exibe o número de palavras na frase.
+    printf("Número de palavras: %d\n", numeroDePalavras);
+
+    return 0;
+}
+                
+                    </code></pre>
+                </div>
+                 
+            </div>
+        </body>
+
+        </html>
+        <button id="back-to-top">&#8593;</button>
+    </main>
+    <footer>
+        <p>Desenvolvido na disciplina AS64C: Certificadora De Competência Comum</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
