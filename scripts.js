@@ -22,6 +22,7 @@ for(let i = 0; i < answerButton.length; i++) {
     answerButton[i].addEventListener('click', () => {
         console.log('innerhtml: ', answerButton[i].innerHTML);
        
+<<<<<<< HEAD
         const code = answerButton[i].nextElementSibling.querySelector('code');
         console.log('code:', code);
         
@@ -32,8 +33,26 @@ for(let i = 0; i < answerButton.length; i++) {
         }
         else {
             code.style.display = 'none';
+=======
+        // const code = answerButton[i].nextElementSibling.querySelector('code');
+        const pre = answerButton[i].nextElementSibling;
+
+        console.log(pre);
+        
+        if(answerButton[i].innerHTML == '+ Mostrar Resposta') {
+            // console.log('code display: ', code.style.display)
+            pre.style.display = 'block';
+            answerButton[i].innerHTML = '- Esconder Resposta';
+        }
+        else {
+            pre.style.display = 'none';
+>>>>>>> a1dc81a (atualização visual completa)
             answerButton[i].innerHTML = '+ Mostrar Resposta';
         }
     });
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a1dc81a (atualização visual completa)

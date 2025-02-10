@@ -1,0 +1,62 @@
+:root {
+    --font-family-01: "Roboto", sans-serif;
+    --font-family-02: "Ubuntu Sans Mono", serif;
+
+    --font-size-h1: 1.3125rem;
+    --font-size-h2: 1.6875rem;
+    --font-size-h3: 1.125rem;
+    --font-size-h4: 0.75rem;;
+    --font-size-body: 0.75rem;
+    --font-size-code: 0.6rem;
+}
+
+main, h1, h2, h3, h4, p, a, strong, em, li {
+    font-family: var(--font-family-01);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+p, a, strong, em, li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+p, li {
+    font-weight: 350;
+}
+
+strong, em {
+    font-weight: 500;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    font-weight: 500;
+    font-style: italic;
+}
+
+code {
+    font-family: var(--font-family-02);
+    font-size: var(--font-size-code);
+}
+
+#quiz-page .answer-button {
+    font-weight: 500;
+}

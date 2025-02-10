@@ -1,0 +1,65 @@
+/*PÁGINA INICIAL*/
+#index-page.banner {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 17.5rem;
+    background-image: url('../../img/laptop-2620118_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-authors {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15%;
+    align-items: start;
+    justify-items: center;
+}
+
+.container-authors img  {
+    margin-bottom: 1.875rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    /* border-radius: 5px; */
+    border-radius: 200px;
+}
+
+.container-authors h4 {
+    font-size: 0.9375rem;
+    margin-bottom:   0.9375rem;
+}
+
+.container-authors .author-info h4 {
+    /* text-align: center; */
+    margin-bottom: 15px;
+}
+
+
+/*PÁGINA DO QUIZ*/
+
+#quiz-page .video-description {
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--margin-H3);
+}
+
+#quiz-page video {
+    display: block;
+    width: 100%;
+}
+
+#quiz-page pre {
+    display: none;
+}
+
+
+#quiz-page .answer-button {
+    margin-top: var(--margin-body);
+    cursor: pointer;
+}
+

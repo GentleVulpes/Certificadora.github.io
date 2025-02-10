@@ -1,0 +1,103 @@
+:root {
+    /* --margin-H2: 1.5rem; */
+    --margin-H2: 3rem;
+    /* --margin-H3: 1.125rem; */
+    --margin-H3: 2.25rem;
+    /* --margin-H4: 1.125rem; */
+    --margin-H4: 2.225rem;
+    --margin-body: 0.75rem;
+    
+    --margin-container-H2: 2.25rem; 
+    --margin-container-H3: 1.96875rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 30px;
+    align-items: center;
+;
+}
+
+.flex {
+    display: flex;
+    flex-flow:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 1.875rem;
+}
+
+h3 {
+    margin-top: var(--margin-H3);
+    margin-bottom: calc(var(--margin-H3)/2);
+}
+
+h3:last-child {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-bottom: calc(var(--margin-H4)/2);;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    padding: 3.75rem;
+    width: calc(100% - 39.375rem);
+    margin: 3.75rem auto;
+    border-radius: 5px;
+    
+}
+
+.text-container-h2 {
+    margin-top: var(--margin-H2);
+    margin-bottom: var(--margin-H2);
+}
+
+.text-container-h2:first-child {
+    margin-top: 0;
+}
+
+
+.text-container-h3 {
+    margin: var(--margin-H3) 0;
+}
+
+.text-container-h4 {
+    margin: var(--margin-H4) 0;
+}
+
+.text-container-h4:first-child {
+    margin-top: 0;
+}
+
+.text-container-h4:last-child {
+    margin-bottom: 0;
+}
+
+.topic-list {
+    margin-top: 0.9375rem;
+}
+
+li {
+    margin: var(--margin-body) 0;
+}
+
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+pre {
+    padding: 1.875rem;
+    margin-bottom: 0.75rem; 
+}
+
+

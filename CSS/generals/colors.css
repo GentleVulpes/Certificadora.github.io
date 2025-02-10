@@ -1,0 +1,73 @@
+:root{
+    --base-color-01: #3D6DCC;
+    --base-color-02: #0B3280;
+
+    --support-color-01: #FAFCFF;
+    --support-color-02: #F0F5FF;
+    --support-color-03: #332D0F;
+    --support-color-04: #4D4417;
+    --support-color-05: #231F0E;
+
+    --emphasis-color-01: #9A6015;
+    --emphasis-color-02: #CCB13D;
+}
+
+.nav-menu h1 {
+    color: var(--base-color-02);
+}
+
+body {
+    background-color: var(--support-color-01);
+}
+
+main {
+    background-color: var(--support-color-01);
+}
+
+
+
+
+h1, h2, h3, h4, p, code {
+    color: var(--support-color-05);
+}
+
+
+header {
+    background-color: var(--support-color-01);
+}
+
+em, strong  {
+    color:  var(--support-color-05);
+}
+
+a {
+    color: var(--emphasis-color-01);
+}
+
+a:hover {
+    color: var(--emphasis-color-02);
+}
+
+pre {
+    background-color: var(--support-color-01);
+}
+
+#quiz-page .answer-button {
+    color: var(--emphasis-color-01);
+}
+
+#quiz-page .answer-button:hover {
+    color: var(--emphasis-color-02);
+}
+
+#back-to-top {
+    border: 3px solid #925a0f;
+    background-color: var(--emphasis-color-01);
+    color: var(--support-color-01);
+}
+
+#back-to-top:hover {
+    background-color:  #b87b2c;
+    border-color:rgb(165, 104, 25);
+    color: var(--support-color-02);
+}

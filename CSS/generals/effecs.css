@@ -1,0 +1,18 @@
+:root {
+    --drop-shadow-01: 0px 2px 4px 0px rgba(0,0,0,0.1);
+    --drop-shadow-02: 0px 2px 4px 0px rgba(0,0,0,0.15);
+    --drop-shadow-03: 0px 4px 4px 0px rgba(0,0,0,0.2);  
+}
+
+pre {
+    box-shadow: var(--drop-shadow-01);
+}
+
+
+main {
+    box-shadow: var(--drop-shadow-02);
+}
+
+#back-to-top {
+    box-shadow: var(--drop-shadow-03);
+}

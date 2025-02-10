@@ -1,0 +1,10 @@
+@import "./generals/reset.css";
+@import "./generals/colors.css";
+@import "./generals/effecs.css";
+@import "./generals/typography.css";
+@import "./generals/layout.css";
+@import "./components/components.css";
+@import "./pages/index.css";
+@import "./pages/especificos.css"
+
+/*definir tipografias para tamanhos h3, h4, code, em*/
