@@ -48,12 +48,13 @@
     margin-bottom: var(--margin-H3);
 }
 
-#quiz-page video {
+/* #quiz-page iframe {
     display: block;
     width: 100%;
-}
+} */
 
-#quiz-page iframe {
+
+iframe {
     display: block;
     width: 100%;
 }
